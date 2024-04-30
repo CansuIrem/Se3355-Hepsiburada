@@ -1,0 +1,398 @@
+header .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    margin-right: 2.5rem;
+}
+
+header .header-top ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+header .header-top ul li a {
+    color: rgba(128, 128, 128, 0.94);
+    text-decoration: none;
+    font-size: .7rem;
+    font-weight: 500;
+}
+
+header .header-top ul li a:hover {
+    opacity: 0.4;
+}
+
+header .header-top ul li:nth-child(5) a {
+    color: red;
+}
+
+header .header-top ul li:nth-child(7) a {
+    color: var(--mainColor);
+}
+
+
+
+
+/* headerBottom */
+
+header .header-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1rem;
+}
+
+header .header-bottom .logo {
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 3rem;
+    cursor: pointer;
+}
+
+header .header-bottom .logo img {
+    width: 190px;
+    object-fit: cover;
+}
+
+header .header-bottom .logo span {
+    text-align: end;
+    margin-top: .5rem;
+    font-weight: 600;
+    font-size: .9rem;
+    color: rgba(0, 0, 0, 0.701);
+}
+
+header .header-bottom .logo #premium {
+    color: var(--mainColor);
+
+}
+
+header .header-bottom .search {
+    position: relative;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #919191;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+
+    overflow: hidden;
+}
+
+header .header-bottom .search input {
+    padding: .7rem 0rem;
+    padding-left: 3.5rem;
+    flex: 4;
+    outline: none;
+    border: none;
+}
+
+header .header-bottom .search input::placeholder {
+    opacity: .5;
+    font-size: .9rem;
+}
+
+header .header-bottom .search .bi-search {
+    position: absolute;
+    left: 1rem;
+    font-size: 1.5rem;
+    color: rgba(128, 128, 128, 0.553);
+}
+
+header .header-bottom .search button {
+    outline: none;
+    border: none;
+    flex: 1;
+    padding: .7rem 0rem;
+    background-color: #919191;
+    color: white;
+}
+
+.container {
+    display: flex;
+    /* Enable flexbox for side-by-side layout */
+    width: 100%;
+    /* Take up full width of the screen */
+    margin-left: 5%;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.renk-gecisi {
+    display: flex;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right, rgb(256, 102, 18), rgb(256, 102, 18), rgb(79, 180, 217), rgb(137, 26, 211), rgb(17, 191, 26), rgb(92, 13, 121));
+    border-radius: 10px 10px 0 0;
+}
+
+.renk-1 {
+    flex: 1;
+    background-color: rgb(256, 102, 18);
+}
+
+.renk-2 {
+    flex: 1;
+    background-color: rgb(256, 102, 18);
+}
+
+.renk-3 {
+    flex: 1;
+    background-color: rgb(79, 180, 217);
+}
+
+.renk-4 {
+    flex: 1;
+    background-color: rgb(137, 26, 211);
+}
+
+.renk-5 {
+    flex: 1;
+    background-color: rgb(17, 191, 26);
+}
+
+.renk-6 {
+    flex: 1;
+    background-color: rgb(92, 13, 121);
+}
+
+/* Sol Taraf Kutu CSS'i */
+.sol-taraf-kutu {
+    width: 21%;
+    /* Sayfanın %20'si genişliğinde */
+
+    margin-top: 3%;
+    background-color: #fff;
+    /* Açık gri arka plan */
+    padding: 1rem;
+    /* Kutunun iç kenar boşlukları */
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.288);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+    padding-top: 2rem;
+    height:fit-content;
+    overflow: auto;
+    max-height: auto;
+}
+
+.sol-taraf-kutu ul {
+    list-style: none;
+    /* Madde işaretlerini kaldırır */
+    padding: 0;
+    /* Alt öğeler arasındaki boşluğu kaldırır */
+    padding-left: 1rem;
+}
+
+.sol-taraf-kutu li {
+    margin-bottom: 1rem;
+    /* Kategori öğeleri arasındaki boşluk */
+    color: #333;
+    /* Kategori metni rengi */
+    text-decoration: none;
+    /* Metin altını kaldırır */
+    font-weight: bold;
+    /* Kategori metni kalın yapar */
+    cursor: default;
+}
+
+.sol-taraf-kutu li a {
+    color: #333;
+    /* Kategori metni rengi */
+    text-decoration: none;
+    /* Metin altını kaldırır */
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.sol-taraf-kutu a:hover {
+    color: #ff6612;
+    /* Kategori metni üzerine gelince mavi renk */
+    text-decoration: underline;
+}
+
+/* Sağ Taraf Kutu CSS'i */
+.sag-taraf-kutu {
+    width: 77%;
+    background-color: #fff;
+    /* Açık gri arka plan */
+    padding: 1rem;
+    position: relative;
+    /* Alt öğelerin konumlandırılması için */
+
+    margin-left: 2%;
+    /* Sol kutuyla 2rem boşluk */
+    display: flex;
+    /* Kutuyu yatay olarak hizalamak için */
+    flex-direction: column;
+    align-items: flex-start;
+    /* Öğeleri dikey olarak ortalamak için */
+    justify-content: flex-end;
+    /* Öğeleri sağa yaslamak için */
+    gap: 3rem;
+    padding-top: 2rem;
+}
+
+.filtre {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.288);
+    padding: 1rem;
+    max-height: 110px;
+}
+
+.teslimat-filtre {
+    position: relative;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self:auto;
+    margin-top: 2%;
+    margin-right: -17%;
+}
+
+.yarin-kapida {
+    display: flex;
+    justify-content: space-between;
+    width: 21%;
+    padding: 1rem;
+}
+
+.sag-taraf-kutu label {
+    font-weight: bold;
+    color: #333;
+    /* Koyu gri metin rengi */
+    margin-top: 11%;
+    cursor: pointer;
+}
+
+.sag-taraf-kutu input[type="checkbox"] {
+    appearance: none;
+    /* Varsayılan checkbox görünümünü kaldırır */
+    width: 20px;
+    height: 20px;
+    border: 1px solid #808080;
+    /* Gri kenarlık */
+    border-radius: 5px;
+    /* Köşeleri yuvarlatır */
+    background-color: #f2f2f2;
+    /* Gri arka plan */
+    cursor: pointer;
+    align-self: flex-start;
+    margin-top: 12%;
+}
+
+.sag-taraf-kutu input[type="checkbox"]:checked {
+    background-color: #ff6612;
+    /* Seçildiğinde mavi arka plan */
+}
+
+
+/* Location Button */
+#location-btn {
+    background-color: #ff6612;
+    /* Orange color */
+    color: #fff;
+    /* Dark orange color */
+    padding: 0.8rem 0.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    /* Needed for dropdown positioning */
+}
+
+#location-btn:hover {
+    background-color: #ff5512;
+  }
+
+#citySelectionWindow {
+    position: relative;
+    top: 10px; /* Adjust as needed to position below the button */
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  
+
+.hidden {
+    display: none;
+  }
+
+  #citySelect {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  #applyButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff6612;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #applyButton:hover {
+    background-color: #ff5512;
+  }
+
+  
+
+/* Grid düzeni için */
+.container3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Bir satırda 4 kart olacak */
+    gap: 20px;
+    /* Kartlar arası boşluk */
+}
+
+/* Kart stili */
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+}
+
+.product-card:hover {
+    cursor: pointer;
+    border: 1px solid #999;
+}

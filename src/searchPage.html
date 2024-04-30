@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="searchPageStyle.css" />
+</head>
+
+<body>
+    <div>
+        <header>
+            <div class="header-top">
+                <ul>
+                    <li><a href="#">Siparişlerim</a></li>
+                    <li><a href="#">Süper Fiyat, Süper Teklif</a></li>
+                    <li><a href="#">Yurt Dışından</a></li>
+                    <li><a href="#">Kampanyalar</a></li>
+                    <li><a href="#">Girişimci Kadınlar</a></li>
+                    <li><a href="#">Müşteri Hizmetleri</a></li>
+                    <li><a href="#">Hepsiburada Premium</a></li>
+                    <li><a href="#">Hepsiburada'da Satıcı Ol</a></li>
+                </ul>
+            </div>
+            <div class="header-bottom">
+                <div class="logo">
+                    <img src="../images/Hepsiburada_logo_official.svg" alt="">
+                    <span> <span id="premium">Premium'u </span>keşfet</span>
+                </div>
+                <div class="search">
+                    <input id="search" type="text" placeholder="Ürün,  kategori veya marka ara">
+                    <i class="bi bi-search"></i>
+                    <button id="search-button">ARA</button>
+                </div>
+
+            </div>
+            <div class="container2">
+                <div class="renk-gecisi">
+                    <div class="renk-1"></div>
+                    <div class="renk-2"></div>
+                    <div class="renk-3"></div>
+                    <div class="renk-4"></div>
+                    <div class="renk-5"></div>
+                    <div class="renk-6"></div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="sol-taraf-kutu">
+                    <ul  id="left-side-box">
+                    </ul>
+                </div>
+
+                <div class="sag-taraf-kutu">
+                    <div class="filtre">
+                        <div class="teslimat-filtre">
+                            <h4>Teslimat filtreleri</h4>
+                            <p>Konumunuzu seçerek hızlı teslimattan faydalanın.</p>
+                        </div>
+                        <div class="right-side">
+                            <button id="location-btn">Konum seç<i class="fas fa-map-marker-alt"></i></button>
+
+                            <div id="citySelectionWindow" class="hidden">
+                                <select id="citySelect"></select>
+                                <button id="applyButton">Apply</button>
+                            </div>
+                        </div>
+                        <div class="yarin-kapida">
+                            <input type="checkbox" id="yarin-kapida">
+                            <label for="yarin-kapida">Yarın Kapında</label>
+                        </div>
+                    </div>
+                    <div class="container3" id="product-container">
+                        <!-- Ürün kartları burada dinamik olarak oluşturulacak -->
+                    </div>
+                </div>
+
+            </div>
+
+            <script src="searchPage.js"></script>
+</body>
+
+</html>
